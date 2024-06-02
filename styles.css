@@ -7,6 +7,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  background-color: var(--background-color);
 
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
@@ -14,6 +15,7 @@ body {
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
+  --background-color: rgb(249, 226, 247);
 }
 
 .container {
@@ -40,6 +42,7 @@ body {
   box-shadow: 1px 1px 7px 7px #f5f5f5;
   padding: 30px 0;
   max-width: 900px;
+  background-color: white;
 }
 
 .resume__block {
@@ -109,6 +112,7 @@ body {
   width: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .contact-info__item-icon path {
@@ -162,7 +166,7 @@ body {
 
 .skills__text {
   color: var(--secondary-text-color);
-  text-align: justify;
+  text-align: center;
 }
 .experiences {
   flex: 1 1 60%;
@@ -256,4 +260,37 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.additional-info__container {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+}
+
+.hobbies__block {
+  border-bottom: 3px solid var(--border-color);
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+.additional-info__hobbies-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.additional-info__hobbies-item {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+.additional-info__hobbies-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.mem__block {
+  display: flex;
+  justify-content: center;
 }
